@@ -1,65 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Tarot Visio</title>
-  <style>
-    body {
-      background: #f2f2f2;
-      font-family: sans-serif;
-      padding: 20px;
-      color: #333;
-    }
-    h1 {
-      font-size: 2em;
-      color: #5a2a83;
-    }
-    form {
-      background: #fff;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-      border-left: 5px solid #5a2a83;
-    }
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background: #5a2a83;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #472265;
-    }
-  </style>
-</head>
-<body>
-  <h1>🔮 Tarô Visio</h1>
-  <p>Escolha seu jogo intuitivo. Após o pagamento, você receberá a resposta no seu e-mail.</p>
-  <ul>
-    <li><strong>Insisto ou Desisto?</strong> – R$15,00</li>
-    <li><strong>Conselho do Dia</strong> – R$12,00</li>
-  </ul>
+<style>
+  /* ... seu estilo existente ... */
 
-  <form action="https://formsubmit.co/tarot.vision75@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Novo pedido de Tarot Visio!">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="email" name="email" placeholder="Seu e-mail" required>
-    <select name="jogo" required>
-      <option value="">Selecione o jogo</option>
-      <option value="Insisto ou Desisto?">Insisto ou Desisto?</option>
-      <option value="Conselho do Dia">Conselho do Dia</option>
-    </select>
-    <p>💳 Faça o pagamento via PIX após enviar o pedido. Você receberá sua resposta por e-mail.</p>
-    <button type="submit">Enviar Pedido</button>
-  </form>
-</body>
-</html>
+  button, .mp-button {
+    background: #064420; /* verde escuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  button:hover, .mp-button:hover {
+    background: #043214; /* verde ainda mais escuro no hover */
+  }
+</style>
+
+<!-- dentro do body -->
+
+<div class="mp-container">
+  <a href="SEU_LINK_DE_PAGAMENTO_MERCADOPAGO_AQUI" target="_blank" class="mp-button">
+    Pagar pelo Mercado Pago
+  </a>
+</div>
