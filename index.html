@@ -26,4 +26,68 @@
     .payment-link:hover {
       background: #218838;
     }
-    .cards-container
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .card p {
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Link de Pagamento -->
+  <a href="https://seulinkdepagamento.com" target="_blank" class="payment-link">
+    Pagar Agora
+  </a>
+
+  <!-- Cartas -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://via.placeholder.com/220x140.png?text=Carta+1" alt="Carta 1" />
+      <h3>Carta 1</h3>
+      <p>Descrição detalhada da carta 1. Explica as vantagens, benefícios ou o que for necessário.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220x140.png?text=Carta+2" alt="Carta 2" />
+      <h3>Carta 2</h3>
+      <p>Descrição detalhada da carta 2, explicando o conteúdo que ela apresenta.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220x140.png?text=Carta+3" alt="Carta 3" />
+      <h3>Carta 3</h3>
+      <p>Descrição detalhada da carta 3, com informações úteis para o usuário.</p>
+    </div>
+  </div>
+
+</body>
+</html>
